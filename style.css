@@ -1,0 +1,185 @@
+/*CSS REset*/
+*{
+    margin:0;
+    padding:0;
+}
+/*css variable*/
+:root{
+    --navbar-height:89px;
+}
+/*Navigaton */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top:0px;
+    left: 0px;
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    display: block;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity: 0.3;
+}
+/*Navigaton logo and image*/
+#logo{
+    margin:10px 20px;
+}
+#logo img{
+    height:70px;
+    width: 70px;
+    margin:5px 5px;
+}
+/* navbar items*/
+#navbar ul{
+    display: flex;
+    text-decoration: none;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color:white;
+    padding:3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li :hover{
+    color:black;
+    background-color: #fff;
+    
+}
+/*home Section*/
+#home::before{
+    content:"";
+    background:url("bgimg/bgimg1.jpg") no-repeat center center/cover;
+    position: absolute;
+    height:50%;
+    width:100%;
+    z-index:-2;
+    top:0px;
+    left:0px;
+   
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 100px;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+#home h1{
+    color:white;
+    text-align: center;
+}
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.8rem;
+}
+/*services*/
+.services-container{
+    margin-top: 50px;
+}
+#services{
+    display: flex;
+    margin: 30px;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin:25px;
+    border-radius: 23px;
+}
+
+/*client section*/
+
+#client-section{
+    height: 344px;
+    background-color: bisque;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding:34px;
+}
+/*Contact Section*/
+#contact{
+    position: relative;
+}
+#contact::before{
+    content:"";
+    background:url("bgimg/bgimg1.jpg") no-repeat center center/cover;
+    position: absolute;
+    height:100%;
+    width:100%;
+    z-index:-2;
+    top:0px;
+    left:0px;
+   
+}
+#contact-box {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:34px ;
+}
+ #contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius:9px ;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+/*utility Class*/
+.h-primary{
+    font-size: 3rem;
+    padding:12px;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.h-secondary{
+    font-size: 2.5rem;
+    padding:12px;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.btn{
+    padding: 6px 20px;
+    border:2px solid white;
+    background-color: black;
+    color:white;
+    margin: 17px;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+.abc{
+    height: 170px;
+    display: block;
+    margin: auto;
+}
+footer{
+    background: #000;
+    color: white;
+}
