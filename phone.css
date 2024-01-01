@@ -2,6 +2,9 @@
 #navbar{
     flex-direction: column;
 }
+#item{
+    padding:4px 10px;
+}
 /*home*/
 #home::before{
     height:480px;
